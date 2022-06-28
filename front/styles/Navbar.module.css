@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Offside&family=Potta+One&family=Suez+One&display=swap');
+
+.navbar_content{
+	background-color: #2F325A;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.wrap{
+	height: 100%;
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.profile{
+	position: relative;
+	height: 100%;
+	min-width: 25%;
+	margin-left: 100px;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+}
+
+.notifBtn{
+	min-width: 70px;
+	height: 47px;
+	left: 950px;
+	align-items: center; 
+	border: 0;
+	background: #4C7CFE;
+	border-radius: 15px;
+	display: flex;
+	cursor: pointer;
+    justify-content: center;
+}
+
+.notifBtn:hover{
+    background-color: #3057c3;
+}
+.userImg {
+	background-position: 50% 50%;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-color: tan;
+	border-radius: 50%;
+	min-width: 60px; /* depends on size of photo & container */
+	height: 60px; /* just to reset to default if needed */
+	padding-top: 50px; /* must equal min-width to make a circle */
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.profile span{
+	color: whitesmoke;
+	font-weight: 200;
+	font-family: 'Offside', cursive;
+	text-transform: uppercase;
+	margin-left: 5px;
+
+}
+
+.logoutBtn {
+ 	background: #F65061;
+	min-width: 70px;
+	height: 47px;
+	left: 1358px;
+	top: 14px;
+	border: 0;
+	border-radius: 15px;
+	margin-right: 50px;
+	display: flex;
+    align-items: center;
+	cursor: pointer;
+    justify-content: center;
+}
+
+.logoutBtn:hover {
+ 	background: #b82e3c;
+}
+
+.notifWrap {
+	background-color: #2F325A;
+	height: 0px;
+	width: 400px;
+	overflow: hidden;
+	position: absolute;
+	top: 65px;
+	right: 105px;
+	visibility: hidden;
+	transition:all 0.4s ease-in-out;
+	padding: 5px 10px;
+	overflow: auto;
+
+	z-index: 1;
+}
+
+.notifPlay{
+	background-color: red;
+	border-radius: 10px;
+	height: 70%;
+	width: 350px;
+	right: 300px;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.notifPlayActive{
+	visibility: visible;
+	opacity: 1;
+	visibility: visible;
+}
+
+@media only screen and (max-width: 1400px) {
+  	.wrap {
+		width: 50%;
+	}
+	.profile{
+		min-width: 30%;
+		margin-left: 50px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 875px) {
+	.wrap {
+		width: 100%;
+	}
+	.profile{
+		min-width: 30%;
+		margin-left: 15px;
+	}
+	.logoutBtn{
+		margin-right: 15px;
+	}
+	.notifPlayActive {
+		left: 250px;
+		width: 250px;
+	}
+}

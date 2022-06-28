@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+.settings{
+	height: 60%;
+	width: 40%;
+	z-index: 1;
+	color:white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.padelSpeed, .ballSpeed, .ballStyle, .backgroundStyle, .buttonSelect{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.settingButton{
+	height: 180%;
+	width: 40%;
+	border-radius: 20px;
+	background-color: #2F325A;
+	color: white;
+	font-family: 'Squada One', cursive;
+	font-size: 180%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonSelect .settingButtonBack{
+	height: 180%;
+	width: 40%;
+	border-radius: 20px;
+	color: white;
+	font-family: 'Squada One', cursive;
+	font-size: 180%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: red;
+}
+
+.buttonSelect .settingButtonPlay{
+	height: 180%;
+	width: 40%;
+	border-radius: 20px;
+	color: white;
+	font-family: 'Squada One', cursive;
+	font-size: 180%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: green;
+}
+
+.settingButtonBack button {
+	background-color: red;
+	border: 0;
+	color: white;
+	font-family: 'Squada One', cursive;
+	font-size: 100%;
+}
+
+.settingButtonPlay button {
+	background-color: green;
+	border: 0;
+	color: white;
+	font-family: 'Squada One', cursive;
+	font-size: 100%;
+}
+
+.settingButton span {
+	margin-left: 15px;
+	min-width: 10%;
+}
+
+.settingButton input{
+	min-width: 50%;
+}
+
+@media only screen and (max-width: 1400px) {
+	.settingButton a{
+		font-size: 80%
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	.settingButton a{
+		font-size: 65%
+	}
+}
+
+@media only screen and (max-width: 875px) {
+	.gameButton button{
+		font-size: 150%;
+	}
+	.settings{
+		height: 60%;
+		width: 80%;
+	}
+	.settingButton a{
+		font-size: 80%
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.settingButton a{
+		font-size: 55%
+	}
+}

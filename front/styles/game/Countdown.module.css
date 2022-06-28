@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.countdown {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  counter-reset: my-count 5;
+  animation: countdown 5s linear infinite;
+}
+
+.countdown:after {
+  content: counter(my-count);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+}
+
+@keyframes countdown {
+  0% {
+  }
+  20% {
+    counter-increment: my-count -1;
+  }
+  40% {
+    counter-increment: my-count -2;
+  }
+  60% {
+    counter-increment: my-count -3;
+  }
+  80% {
+    counter-increment: my-count -4;
+  }
+  100% {
+  }
+}

@@ -1,0 +1,180 @@
+.userRaw {
+  display: grid;
+  grid-template-columns: 0.2fr 0.4fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  margin: 10px;
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+  background-color: #4a5190;
+}
+
+.pictureBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pictureAndName {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.pictureRaw {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  min-width: 40px;
+  /* depends on size of photo & container */
+  height: 50px;
+  /* just to reset to default if needed */
+  width: 50px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+
+}
+
+.sendMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sendMessageBtn {
+  background-color: #25D366;
+  height: 80%;
+  width: 80%;
+  border-radius: 5%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.sendMessageBtn:hover {
+  background-color: #1fb154;
+}
+
+.sendMessage:active {
+  transform: scale(1.06);
+}
+
+.addedField {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.addedButton {
+  background-color: #4C7CFE;
+  height: 80%;
+  width: 80%;
+  border-radius: 5%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.addedButton:active {
+  transform: scale(1.06);
+}
+
+
+.cancelButton {
+  background-color: #F85064;
+  height: 80%;
+  width: 80%;
+  border-radius: 5%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.cancelButton:active {
+  transform: scale(1.06);
+}
+
+.addedButton:hover {
+  background-color: rgb(52 213 85);
+}
+
+.cancelButton:hover {
+  background-color: #ab3c49;
+}
+
+.profileField {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blockField {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blockButton {
+  background-color: #F85064;
+  height: 80%;
+  width: 80%;
+  border-radius: 5%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.deblockButton {
+  background-color: #1dc528;
+  height: 80%;
+  width: 80%;
+  border-radius: 5%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.profileButton {
+  background-color: #7387bd;
+  height: 80%;
+  width: 80%;
+  border-radius: 5%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.profileButton:hover {
+  /* background-color: #4d5d87; si vous aimer pas le violet mettez cette couleur sa rend bien*/
+  background-color: #3f0884;
+}
+
+.blockButton:hover {
+  background-color: #9e2f3c;
+}
+
+.deblockButton:hover {
+  background-color: #1aa724;
+}
+
+.profileButton:active {
+  transform: scale(1.06);
+}

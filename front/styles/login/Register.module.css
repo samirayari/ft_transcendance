@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto&display=swap');
+.allScreen {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns : 1fr 1fr;
+    grid-template-rows : 1fr;
+    grid-template-areas: "leftPart rightPart";
+
+}
+.leftPart {
+    height: 100%;
+    width: 100%;
+    grid-area: leftPart;
+    display: contents;
+}
+
+.rightPart {
+    height: 100%;
+    width: 100%;
+    grid-area: rightPart;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formWrap {
+    height: 55%;
+    width: 65%;
+    padding-left: 30px;
+    padding-right:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.formWrap h1{
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 37px;
+}
+.usernameWrap {
+    display: flex;
+    justify-content: space-between;
+    font-size :23px;
+    font-family: roboto;
+    font-weight: bold;
+    height: 80px;
+}
+.userInput {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+.nameInput {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+.emailInput {
+    font-size :23px;
+    font-weight: bold;
+    font-family: roboto;
+    display: flex;
+    flex-direction:column;
+}
+
+.passwordInput {
+    font-size :23px;
+    font-family: roboto;
+    font-weight: bold;
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 30px;;
+}
+
+.usernameWrap input{
+    height: 40px;
+    border:0;
+    width: 100%;
+}
+
+.rightPart input {
+    height: 40px;
+    border:0;
+    border-radius: 6px;
+    background-color: #f3f3f4;
+    margin-top: 5px;
+    font-size: 17px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.spaceRegister {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:90px;
+    position: relative;
+    bottom: 20px;
+}
+/* () => signIn("credentials", {username: "lemailquoi", password: "pass", callbackUrl: "http://localhost:3000/mainpage"}) */
+.createAccount {
+    background-color:#F65062;
+    color:white;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:48%;
+    transition:all 0.5s;
+    cursor:pointer;
+    border: 0;
+}
+.createAccount:hover {
+    background-color: #4c7cfe;
+}
+.signUpWith42 {
+    background-color: #475377;
+    color:white;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:40%;
+    padding-right:35%;
+    height:48%;
+    transition:all 0.5s;
+    cursor:pointer;
+}
+
+.signUpWith42:hover{
+    background-color: #4c7cfe;
+}
+
+.imageft{
+    margin-left: 5px;
+}
+
+.icon {
+    background-color:red;
+}
+
+.already{
+    display:flex;
+    justify-content: flex-end;
+    font-family: roboto;
+}
+
+.already a {
+    color: red;
+}
+
+.errorMessage {
+    color: rgb(255 210 210);
+    font-family: roboto;
+    background-color: rgb(213 83 83);
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resMessage {
+    color: rgb(224 255 221);
+    font-family: roboto;
+    background-color: rgb(52 213 85);
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .allScreen{
+        grid-template-areas: "rightPart rightPart";
+    }
+    .leftPart{
+        display: none;
+    }
+    .formWrap{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .allScreen{
+        grid-template-areas: "rightPart rightPart";
+    }
+    .leftPart{
+        display: none;
+    }
+    .formWrap{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+

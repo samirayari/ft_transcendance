@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+.content{
+	height: 100%;
+	padding : 5rem;
+	color: whitesmoke;
+	font-family: 'Squada One';
+}
+
+.header{
+	background-color: #2F325A;
+	height: 15rem;
+	display: flex;
+	flex-direction: column;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	position: relative;
+}
+
+.title{
+	font-size: 4rem;
+	padding-left: 10rem;
+	height: 30rem;
+	position: absolute;
+	top: 2rem;
+}
+
+.playerimg{
+	height: 17rem;
+	width: 17rem;
+	position: absolute;
+	bottom: 0;
+	right: 10rem;
+}
+
+.headerNav{
+	position: absolute;
+	display: flex;
+	justify-content:space-between;
+	bottom: 0;
+	width: 100%;
+	height: 3rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	background: linear-gradient(
+		to bottom,
+		transparent,
+		transparent 10%,
+		rgba(22, 22, 22, 0.5)
+	);
+}
+
+.table{
+	background-color: #202344;
+	width: 100%;
+	height: 10%;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	font-size: x-large;
+}
+
+.rawBodyImpair{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.rawBodyPair{
+	background-color: #2F325A;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.imgname {
+	display: flex;
+	align-items: center;
+	padding-right: 50rem;
+}
+
+.rank{
+	padding-left: 1rem;
+}
+
+.img{
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.username{
+	padding-left: 1.5rem;
+}
+
+.totalpts{
+	text-align: end;
+	padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1500px) {
+	.imgname {
+		padding-right: 20rem;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.title{
+		padding-left: 0.5rem;
+		top: 0;
+	}
+	
+	.playerimg{
+		right: 1rem;
+	}
+	
+	.imgname {
+		padding-right: 10rem;
+	}
+}

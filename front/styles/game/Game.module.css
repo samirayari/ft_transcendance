@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+.content{
+	height: 100%;
+	padding : 30px;
+}
+
+.background{
+	background:#202342;
+	height: 100%;
+	position: relative;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gameChoice{
+	position: relative;
+	width: 60%;
+	height: 30%;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.gameButton{
+	width: 40%;
+	height: 40%;
+	background: #2F325A;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.gameButton button{
+	border: 0px;
+	height: 100%;
+	width: 80%;
+	background-color: #2F325A;
+	color: white;
+	font-family: 'Squada One', cursive;
+	font-size: 250%;
+}
+
+@media only screen and (max-width: 875px) {
+
+	.gameButton button{
+		font-size: 150%;
+	}
+}

@@ -1,0 +1,63 @@
+.notifWrap {
+    background-color:#4a5190;
+    height:30%;
+    margin-top: 4px;
+    display:grid;
+    flex-direction:column;
+    grid-template-columns: 0.5fr 0.8fr 0.8fr;
+    border-radius:10px;
+}
+
+.pictureProfile {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.pictureRaw {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    min-width: 20px; /* depends on size of photo & container */
+    height: 50px; /* just to reset to default if needed */
+    width: 50px;
+}
+
+.nameProfile {
+    display: flex;
+    align-items: center;
+}
+
+.buttonField {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.acceptButton {
+    background-color: #4C7CFE;
+    height:60%;
+    width:40%;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.refuseButton {
+    background-color:#F85064;
+    height:60%;
+    width:40%;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}

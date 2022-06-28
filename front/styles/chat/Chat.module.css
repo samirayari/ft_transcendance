@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Lato:wght@100;300&family=Roboto:wght@100;300;400&family=Source+Serif+Pro:wght@200;300&display=swap');
+
+.chatContent {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 0.45fr 1fr 0.64fr;
+    font-family: 'Roboto', sans-serif;
+    grid-template-areas: "user chat profile";
+    grid-gap: 6rem;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+.users {
+    background: #252A4A;
+    grid-area:user;
+}
+
+.chat {
+    background: #252A4A;
+    grid-area: chat;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+
+
+@media only screen and (max-width: 877px) {
+    .chatContent {
+        height: 100%;
+        width: 100%;
+        /* overflow-x:scroll; */
+        justify-content: center;
+        display: flex;
+
+    }
+    .enable {
+        display: block;
+        /* overflow-x:scroll; */
+    }
+
+    .disable {
+        display: none !important;
+    }
+    .users {
+        height: 100%;
+        width: 50%;
+        place-content: center;
+        margin: 0 50px 0 50px;
+        display: none;
+    }
+    .chat {
+        height: 100%;
+        width: 90%;
+        place-content: center;
+        margin: 0 50px 0 50px;
+       
+    }
+    .profile {
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+      .chatContent {
+        grid-gap: 2rem;
+      }
+
+  }
+

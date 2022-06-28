@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+.nogame{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	background-color: red;
+	width: 70%;
+	height: 60%;
+	z-index: 1;
+}
+
+.nogame h3 {
+	font-family: 'Squada One', cursive;
+	font-size: 350%;
+}
+
+.nogame a {
+	font-family: 'Squada One', cursive;
+	font-size: 200%;
+}

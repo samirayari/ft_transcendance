@@ -1,0 +1,76 @@
+.sidebarContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:#202344;
+}
+
+.sidebarTopMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    
+}
+
+.topButton{
+    background-color:#2F325A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    
+}
+
+.topButton:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.topButton:active {
+    transform: scale(1.2);
+}
+
+.sidebarBottomMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+   
+}
+
+.bottomButton{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.bottomButton:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.2);
+}
+
+.bottomButton:active {
+    transform: scale(1.3);
+}
+
+@media only screen and (max-width: 875px) {
+    .sidebarContent, .sidebarBottomMenu, .sidebarTopMenu {
+        flex-direction: row;
+    }
+    .sidebarTopMenu {
+        width: 70%;
+        height: 100%;
+    }
+    .sidebarBottomMenu{
+        width: 30%;
+        height: 100%;
+    }
+}

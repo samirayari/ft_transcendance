@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+.wrap{
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.launch a{
+	display: flex;
+	position: relative;
+	height: 50%;
+	z-index: 1;
+	font-family: 'Squada One', cursive;
+	font-size: 400%;
+	color:white;
+	align-items: center;
+	justify-content: center;
+}
+
+.spinner{
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+}
+
+.spinner > div{
+	width: 18px;
+	height: 18px;
+	background-color: #0c178d;
+	border-radius: 100%;
+	display: inline-block;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1{
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+	background-color: #1362c9;
+}
+
+.spinner .bounce2{
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+	background-color: #081eec;
+}
+
+.instructions{
+	display: flex;
+	text-align: center;
+	margin-top: 5vh;
+	justify-content: center;
+	font-family: 'Squada One', cursive;
+	font-size: 200%;
+}
+
+.players{
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	margin-top: 1vh;
+	font-family: 'Squada One', cursive;
+	font-size: x-large;
+}
+
+.commandup{
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	margin-top: 1vh;
+	font-family: 'Squada One', cursive;
+	font-size: larger;
+}
+
+.commanddown{
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	margin-top: 1vh;
+	font-family: 'Squada One', cursive;
+	font-size: larger;
+}
+
+.imgwrap a{
+	padding-right: 10px;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+@media only screen and (max-width: 875px) {
+	.launch a{
+		font-size: 200%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.launch a{
+		font-size: 100%;
+	}
+}

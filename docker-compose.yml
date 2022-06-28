@@ -1,0 +1,40 @@
+version: "3.8"
+
+
+services:
+  back:
+    container_name: back
+    build: ./back
+    image: back_image
+    restart: on-failure
+    ports:
+      - "4000:4000"
+      - "4001:4001"
+    networks:
+      - mynetwork
+
+  front:
+    container_name: front
+    build: ./front
+    image: front_image
+    # restart: on-failure
+    ports:
+      - "3000:3000"
+    networks:
+      - mynetwork
+
+  db:
+    container_name: db
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: postgres
+      POSTGRES_DB: transcendence
+    restart: on-failure
+    ports:
+      - "5432:5432"
+    networks:
+      - mynetwork
+    
+networks:
+  mynetwork:

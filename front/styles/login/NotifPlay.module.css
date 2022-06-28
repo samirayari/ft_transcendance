@@ -1,0 +1,57 @@
+.allWrap {
+    background-color:#4a5190;
+    border-radius: 5px;
+    height:100%;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 0.3fr 0.3fr;
+    color:white;
+}
+
+.request {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acceptField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acceptButton {
+    border-radius: 5px;
+    height: 80%;
+    width: 80%;
+    background-color: #09c82f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.declineField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.declineButton {
+    border-radius: 5px;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    background-color:#F85064;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.acceptButton:hover {
+    background-color: #1a8d31;
+
+}
+.declineButton:hover {
+    background-color:#a82b3a;
+}

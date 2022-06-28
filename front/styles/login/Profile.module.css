@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Offside&family=Potta+One&family=Suez+One&display=swap');
+.allWrap {
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    color:white;
+	font-family: 'Offside', cursive;
+}
+
+.container {
+    height:90%;
+    width:70%;
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.7fr 1fr;
+    padding:1rem;
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.31);
+}
+
+.containerLeft {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.pictureBox {
+    display:grid;
+    grid-template-rows: 1fr 0.3fr;
+    grid-template-columns: 1fr;
+}
+
+.pictureWrap {
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.picture {
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	height: 150px; /* just to reset to default if needed */
+    width: 150px;
+}
+
+.pictureTitle {
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ---------------------------------- */
+.rankBox {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rankImage {
+    background-position: 50% 50%;
+    background-size: cover;
+	background-repeat: no-repeat;
+    min-width: 60px;
+    width: 140px;
+    height: 60px;
+    margin-top:25px;
+    height: 70%;
+}
+
+#rankName {
+    font-size: 30px;
+}
+/* ---------------------------------- */
+.containerRight{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    position:relative;
+}
+
+.name {
+    background-color:#202344;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.nameTitle{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.nameContent {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.username {
+    background-color: #2F325A;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.usernameTitle{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.usernameContent{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.email{
+    background-color:#202344;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.emailTitle{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.emailContent{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ratio {
+    background-color: #2F325A;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.ratioTitle{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ratioContent{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.enable2fa{
+    background-color:#202344;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.enable2faTitle{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.enable2faContent {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.rank{
+    background-color: #2F325A;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.rankTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.rankContent{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.status{
+    background-color: #2F325A;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.statusTitle{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.statusContent{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* ---------------------------------- */
+.buttonField {
+    display: flex;
+    padding-top:10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.editButton{
+    background-color: #4C7CFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border:0;
+    height:110%;
+    width:40%;
+}
+
+.editButton:hover {
+    background-color: #3057c3;
+
+}
