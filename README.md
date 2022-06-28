@@ -1,5 +1,6 @@
-Web appli for multiplayer game 'Pong' and interactive chat.
-Framework front-end : NextJs
-Framework back-end : NestJs
+# Transcendance
 
-launch with docker-compose up --build
+## Lancement:
+```
+docker-compose up --build
+```
